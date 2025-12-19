@@ -1,0 +1,17 @@
+[project]
+name = "codon"
+version = "0.1.0"
+description = "A pure TUI application for terminal productivity"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.89.1",
+    "rich>=13.9.4",
+    "prompt-toolkit>=3.0.48",
+]
+
+[project.scripts]
+codon = "codon.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
